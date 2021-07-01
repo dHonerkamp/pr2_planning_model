@@ -1,0 +1,46 @@
+<launch>
+  
+  <arg name="debug" default="false" />
+   
+  <!-- Get package path-->
+  <param name="package_path" value="$(find kuka_motion_control)" />
+  <param name="planner_package_path" value="$(find planner_statistics)" />
+  <param name="terminal_configs_path" value="$(find planning_scenarios)" />
+  
+  <rosparam command="load" file="$(find planner_param_config)/planner_config/planner_parameters_pr2.yaml"/>
+	
+  <!-- send pr2 urdf to param server -->
+  <group>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find pr2_planning_model)/urdf/pr2_mod.urdf.xacro'" />
+    <param name="robot_description_semantic" textfile="$(find pr2_planning_model)/srdf/pr2_mod.srdf" />
+  </group>
+  
+   <!-- Load to the parameter server yaml files -->
+  <group ns="robot_description_planning">    
+    <rosparam command="load" file="$(find pr2_moveit_config)/config/joint_limits.yaml"/>
+  </group>
+
+  <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
+  <group ns="robot_description_kinematics">
+    <rosparam command="load" file="$(find pr2_moveit_config)/config/kinematics.yaml"/>
+  </group>
+  
+  <node pkg="tf" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 odom_combined base_footprint 100" />
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="/use_gui" value="true"/>
+	<!--<rosparam param="/source_list">[/move_group/fake_controller_joint_states]</rosparam>-->
+  </node>
+  
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+  <include file="$(find pr2_planning_model)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="fake_execution" value="true"/>
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+  
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pr2_planning_model)/pr2_planning_rviz.rviz"/>
+  
+</launch>
