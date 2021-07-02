@@ -1,9 +1,36 @@
 <launch>
+
+<!--   start up empty world-->
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false" />
+  <arg name="debug" default="false" />
+  <arg name="paused" default="true"/>
+  <!-- TODO: throttled not implemented in gazebo_ros/empty_world.launch
+  <arg name="throttled" default="false"/>
+  -->
+  <arg name="world_name" default="worlds/empty.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+
+  <arg name="KINECT1" default="$(optenv KINECT1 false)" />
+  <arg name="KINECT2" default="$(optenv KINECT2 false)" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="headless" value="$(arg headless)" />
+    <arg name="paused" value="$(arg paused)" />
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="use_sim_time" value="true" />
+    <!-- TODO: throttled not implemented in gazebo_ros/empty_world.launch
+    <arg name="throttled" value="$(arg throttled)" />
+    -->
+    <arg name="world_name" value="$(arg world_name)"/>
+  </include>
   
   <!-- Startup PR2 without any mechanism controllers -->
   <include file="$(find pr2_planning_model)/launch/pr2_no_controllers.launch" />
 
   <!-- Load and Start Default Controllers -->
   <include file="$(find pr2_controller_configuration_gazebo)/launch/pr2_default_controllers.launch" />
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pr2_planning_model)/pr2_planning_rviz.rviz"/>
 
 </launch>

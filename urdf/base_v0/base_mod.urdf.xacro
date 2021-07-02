@@ -2,8 +2,11 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:include filename="$(find pr2_description)/urdf/sensors/hokuyo_lx30_laser.urdf.xacro" />
-  <xacro:include filename="$(find pr2_planning_model)/urdf/base_v0/base_mod.gazebo.xacro" />
-  <xacro:include filename="$(find pr2_planning_model)/urdf/base_v0/base_mod.transmission.xacro" />
+<!--  TODO: base_mod.gazebo.xacro and base.transmission.xacro are identical to the original -> remove -->
+<!--    <xacro:include filename="$(find pr2_planning_model)/urdf/base_v0/base_mod.gazebo.xacro" />-->
+<!--    <xacro:include filename="$(find pr2_planning_model)/urdf/base_v0/base_mod.transmission.xacro" />-->
+    <xacro:include filename="$(find pr2_description)/urdf/base_v0/base.gazebo.xacro" />
+    <xacro:include filename="$(find pr2_description)/urdf/base_v0/base.transmission.xacro" />
 
   <!-- DATA SOURCES -->
   <!-- all link offsets, CG, limits are obtained from Function Engineering spreadsheet 090224_link_data.xls unless stated otherwise -->
@@ -300,7 +303,6 @@
       <parent link="${name}_box_link"/>
 	  <child link="${name}_footprint" />
     </joint>
-
 
     <!-- visualize bellow -->
     <link name="${name}_bellow_link">

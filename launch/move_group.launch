@@ -56,5 +56,5 @@
   </node>
 
   <rosparam command="load" file="$(find pr2_moveit_config)/config/grasping.yaml"/>
-  
+
 </launch>
