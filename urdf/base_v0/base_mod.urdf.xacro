@@ -206,7 +206,7 @@
 	  <parent link="${name}_x_link"/>
 	  <child link="${name}_y_link"/>
 	  <axis xyz="0 1 0"/>
-	  <limit effort="1000.0" lower="-100.0" upper="100.0" velocity="0.5"/> 
+	  <limit effort="1000.0" lower="-100.0" upper="100.0" velocity="0.5"/>
 	</joint>
 
 	<link name="${name}_theta_link">
@@ -261,8 +261,7 @@
         </geometry>
       </collision>
     </link>
-	
-	
+
 	<joint name="${name}_box_joint" type="fixed">
 	  <origin xyz="0 0 0.0" rpy="0 0 0" />
 	  <parent link="${name}_theta_link"/>
@@ -301,7 +300,7 @@
       <parent link="${name}_box_link"/>
 	  <child link="${name}_footprint" />
     </joint>
-	
+
 
     <!-- visualize bellow -->
     <link name="${name}_bellow_link">
