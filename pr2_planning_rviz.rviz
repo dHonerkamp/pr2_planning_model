@@ -12,20 +12,11 @@ Panels:
         - /RobotModel1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /Marker2
-        - /Marker3
-        - /Marker4
         - /StartGoalMarker1
-        - /StartTreeEdges1
-        - /GoalTreeEdges1
         - /StartTreeNodes1
-        - /GoalTreeNodes1
-        - /EESolutionPath1
-        - /BaseSolutionPath1
-        - /BaseEllipse1
         - /MotionPlanning1/Planned Path1
-      Splitter Ratio: 0.466258
-    Tree Height: 973
+      Splitter Ratio: 0.4662579894065857
+    Tree Height: 1795
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -34,7 +25,7 @@ Panels:
       - /2D Nav Goal1
       - /Publish Point1
     Name: Tool Properties
-    Splitter Ratio: 0.588679
+    Splitter Ratio: 0.5886790156364441
   - Class: rviz/Views
     Expanded:
       - /Current View1
@@ -45,6 +36,10 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: ""
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
 Visualization Manager:
   Class: ""
   Displays:
@@ -54,7 +49,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.03
+        Line Width: 0.029999999329447746
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -73,9 +68,9 @@ Visualization Manager:
       Planning Scene Topic: planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 0.9
+        Scene Alpha: 0.8999999761581421
         Scene Color: 50; 230; 50
-        Scene Display Time: 0.2
+        Scene Display Time: 0.20000000298023224
         Show Scene Geometry: true
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
@@ -1180,142 +1175,142 @@ Visualization Manager:
           Value: true
         wide_stereo_r_stereo_camera_optical_frame:
           Value: true
-      Marker Scale: 0.3
+      Marker Scale: 0.30000001192092896
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          base_x_link:
-            base_y_link:
-              base_theta_link:
-                base_box_link:
-                  base_bellow_link:
-                    {}
-                  base_footprint:
-                    {}
-                  base_laser_link:
-                    {}
-                  bl_caster_rotation_link:
-                    bl_caster_l_wheel_link:
-                      {}
-                    bl_caster_r_wheel_link:
-                      {}
-                  br_caster_rotation_link:
-                    br_caster_l_wheel_link:
-                      {}
-                    br_caster_r_wheel_link:
-                      {}
-                  fl_caster_rotation_link:
-                    fl_caster_l_wheel_link:
-                      {}
-                    fl_caster_r_wheel_link:
-                      {}
-                  fr_caster_rotation_link:
-                    fr_caster_l_wheel_link:
-                      {}
-                    fr_caster_r_wheel_link:
-                      {}
-                  torso_lift_link:
-                    head_pan_link:
-                      head_tilt_link:
-                        head_plate_frame:
-                          projector_wg6802418_frame:
-                            projector_wg6802418_child_frame:
-                              {}
-                          sensor_mount_link:
-                            double_stereo_link:
-                              narrow_stereo_link:
-                                narrow_stereo_l_stereo_camera_frame:
-                                  narrow_stereo_l_stereo_camera_optical_frame:
-                                    {}
-                                  narrow_stereo_r_stereo_camera_frame:
-                                    narrow_stereo_r_stereo_camera_optical_frame:
-                                      {}
-                                narrow_stereo_optical_frame:
-                                  {}
-                              wide_stereo_link:
-                                wide_stereo_l_stereo_camera_frame:
-                                  wide_stereo_l_stereo_camera_optical_frame:
-                                    {}
-                                  wide_stereo_r_stereo_camera_frame:
-                                    wide_stereo_r_stereo_camera_optical_frame:
-                                      {}
-                                wide_stereo_optical_frame:
-                                  {}
-                            high_def_frame:
-                              high_def_optical_frame:
-                                {}
-                    imu_link:
-                      {}
-                    l_shoulder_pan_link:
-                      l_shoulder_lift_link:
-                        l_upper_arm_roll_link:
-                          l_upper_arm_link:
-                            l_elbow_flex_link:
-                              l_forearm_roll_link:
-                                l_forearm_cam_frame:
-                                  l_forearm_cam_optical_frame:
-                                    {}
-                                l_forearm_link:
-                                  l_wrist_flex_link:
-                                    l_wrist_roll_link:
-                                      l_gripper_palm_link:
-                                        l_gripper_l_finger_link:
-                                          l_gripper_l_finger_tip_link:
-                                            {}
-                                        l_gripper_led_frame:
-                                          {}
-                                        l_gripper_motor_accelerometer_link:
-                                          {}
-                                        l_gripper_motor_slider_link:
-                                          l_gripper_motor_screw_link:
-                                            {}
-                                        l_gripper_r_finger_link:
-                                          l_gripper_r_finger_tip_link:
-                                            l_gripper_l_finger_tip_frame:
-                                              {}
-                                        l_gripper_tool_frame:
-                                          {}
-                    l_torso_lift_side_plate_link:
-                      {}
-                    laser_tilt_mount_link:
-                      laser_tilt_link:
+        odom_combined:
+          base_footprint:
+            base_link:
+              base_laser_link:
+                {}
+              base_x_link:
+                base_y_link:
+                  base_theta_link:
+                    base_box_link:
+                      base_bellow_link:
                         {}
-                    r_shoulder_pan_link:
-                      r_shoulder_lift_link:
-                        r_upper_arm_roll_link:
-                          r_upper_arm_link:
-                            r_elbow_flex_link:
-                              r_forearm_roll_link:
-                                r_forearm_cam_frame:
-                                  r_forearm_cam_optical_frame:
+                      bl_caster_rotation_link:
+                        bl_caster_l_wheel_link:
+                          {}
+                        bl_caster_r_wheel_link:
+                          {}
+                      br_caster_rotation_link:
+                        br_caster_l_wheel_link:
+                          {}
+                        br_caster_r_wheel_link:
+                          {}
+                      fl_caster_rotation_link:
+                        fl_caster_l_wheel_link:
+                          {}
+                        fl_caster_r_wheel_link:
+                          {}
+                      fr_caster_rotation_link:
+                        fr_caster_l_wheel_link:
+                          {}
+                        fr_caster_r_wheel_link:
+                          {}
+                      torso_lift_link:
+                        head_pan_link:
+                          head_tilt_link:
+                            head_plate_frame:
+                              projector_wg6802418_frame:
+                                projector_wg6802418_child_frame:
+                                  {}
+                              sensor_mount_link:
+                                double_stereo_link:
+                                  narrow_stereo_link:
+                                    narrow_stereo_l_stereo_camera_frame:
+                                      narrow_stereo_l_stereo_camera_optical_frame:
+                                        {}
+                                      narrow_stereo_r_stereo_camera_frame:
+                                        narrow_stereo_r_stereo_camera_optical_frame:
+                                          {}
+                                    narrow_stereo_optical_frame:
+                                      {}
+                                  wide_stereo_link:
+                                    wide_stereo_l_stereo_camera_frame:
+                                      wide_stereo_l_stereo_camera_optical_frame:
+                                        {}
+                                      wide_stereo_r_stereo_camera_frame:
+                                        wide_stereo_r_stereo_camera_optical_frame:
+                                          {}
+                                    wide_stereo_optical_frame:
+                                      {}
+                                high_def_frame:
+                                  high_def_optical_frame:
                                     {}
-                                r_forearm_link:
-                                  r_wrist_flex_link:
-                                    r_wrist_roll_link:
-                                      r_gripper_palm_link:
-                                        r_gripper_l_finger_link:
-                                          r_gripper_l_finger_tip_link:
-                                            {}
-                                        r_gripper_led_frame:
-                                          {}
-                                        r_gripper_motor_accelerometer_link:
-                                          {}
-                                        r_gripper_motor_slider_link:
-                                          r_gripper_motor_screw_link:
-                                            {}
-                                        r_gripper_r_finger_link:
-                                          r_gripper_r_finger_tip_link:
-                                            r_gripper_l_finger_tip_frame:
+                        imu_link:
+                          {}
+                        l_shoulder_pan_link:
+                          l_shoulder_lift_link:
+                            l_upper_arm_roll_link:
+                              l_upper_arm_link:
+                                l_elbow_flex_link:
+                                  l_forearm_roll_link:
+                                    l_forearm_cam_frame:
+                                      l_forearm_cam_optical_frame:
+                                        {}
+                                    l_forearm_link:
+                                      l_wrist_flex_link:
+                                        l_wrist_roll_link:
+                                          l_gripper_palm_link:
+                                            l_gripper_l_finger_link:
+                                              l_gripper_l_finger_tip_link:
+                                                {}
+                                            l_gripper_led_frame:
                                               {}
-                                        r_gripper_tool_frame:
-                                          {}
-                    r_torso_lift_side_plate_link:
-                      {}
-                  torso_lift_motor_screw_link:
-                    {}
+                                            l_gripper_motor_accelerometer_link:
+                                              {}
+                                            l_gripper_motor_slider_link:
+                                              l_gripper_motor_screw_link:
+                                                {}
+                                            l_gripper_r_finger_link:
+                                              l_gripper_r_finger_tip_link:
+                                                l_gripper_l_finger_tip_frame:
+                                                  {}
+                                            l_gripper_tool_frame:
+                                              {}
+                        l_torso_lift_side_plate_link:
+                          {}
+                        laser_tilt_mount_link:
+                          laser_tilt_link:
+                            {}
+                        r_shoulder_pan_link:
+                          r_shoulder_lift_link:
+                            r_upper_arm_roll_link:
+                              r_upper_arm_link:
+                                r_elbow_flex_link:
+                                  r_forearm_roll_link:
+                                    r_forearm_cam_frame:
+                                      r_forearm_cam_optical_frame:
+                                        {}
+                                    r_forearm_link:
+                                      r_wrist_flex_link:
+                                        r_wrist_roll_link:
+                                          r_gripper_palm_link:
+                                            r_gripper_l_finger_link:
+                                              r_gripper_l_finger_tip_link:
+                                                {}
+                                            r_gripper_led_frame:
+                                              {}
+                                            r_gripper_motor_accelerometer_link:
+                                              {}
+                                            r_gripper_motor_slider_link:
+                                              r_gripper_motor_screw_link:
+                                                {}
+                                            r_gripper_r_finger_link:
+                                              r_gripper_r_finger_tip_link:
+                                                r_gripper_l_finger_tip_frame:
+                                                  {}
+                                            r_gripper_tool_frame:
+                                              {}
+                        r_torso_lift_side_plate_link:
+                          {}
+                      torso_lift_motor_screw_link:
+                        {}
       Update Interval: 0
       Value: true
     - Class: rviz/Marker
@@ -1344,74 +1339,37 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /start_goal_node_marker
+      Marker Topic: /birrt_star_markerarrays
       Name: StartGoalMarker
       Namespaces:
+        end_tree_edges: true
+        start_tree_edges: true
         terminal_nodes: true
       Queue Size: 100
       Value: true
-    - Class: rviz/MarkerArray
-      Enabled: true
-      Marker Topic: /tree_edges_marker
-      Name: StartTreeEdges
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/MarkerArray
-      Enabled: true
-      Marker Topic: /tree_edges_marker2
-      Name: GoalTreeEdges
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
     - Class: rviz/Marker
       Enabled: true
-      Marker Topic: /tree_nodes_marker
+      Marker Topic: birrt_star_markers
       Name: StartTreeNodes
       Namespaces:
-        {}
+        base_ellipse: true
+        base_solution: true
+        ee_solution: true
+        goal_tree_nodes: true
+        start_tree_nodes: true
       Queue Size: 100
       Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /tree_nodes_marker2
-      Name: GoalTreeNodes
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /ee_tree_solution_path
-      Name: EESolutionPath
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /base_tree_solution_path
-      Name: BaseSolutionPath
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: rviz/Marker
-      Enabled: true
-      Marker Topic: /base_ellipse
-      Name: BaseEllipse
-      Namespaces:
-        {}
-      Queue Size: 100
-      Value: true
-    - Class: moveit_rviz_plugin/MotionPlanning
+    - Acceleration_Scaling_Factor: 1
+      Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
       Move Group Namespace: ""
-      MoveIt_Goal_Tolerance: 0
+      MoveIt_Allow_Approximate_IK: false
+      MoveIt_Allow_External_Program: false
+      MoveIt_Allow_Replanning: false
+      MoveIt_Allow_Sensor_Positioning: false
       MoveIt_Planning_Attempts: 10
       MoveIt_Planning_Time: 5
+      MoveIt_Use_Cartesian_Path: false
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
@@ -1873,7 +1831,7 @@ Visualization Manager:
         Show Manipulability: false
         Show Manipulability Index: false
         Show Weight Limit: false
-        TextHeight: 0.08
+        TextHeight: 0.07999999821186066
       Planning Request:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 1
@@ -1889,9 +1847,9 @@ Visualization Manager:
       Planning Scene Topic: planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 0.9
+        Scene Alpha: 0.8999999761581421
         Scene Color: 50; 230; 50
-        Scene Display Time: 0.2
+        Scene Display Time: 0.20000000298023224
         Show Scene Geometry: true
         Voxel Coloring: Z-Axis
         Voxel Rendering: Occupied Voxels
@@ -2331,7 +2289,8 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: false
       Value: true
-    - Alpha: 0.7
+      Velocity_Scaling_Factor: 1
+    - Alpha: 0.699999988079071
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: false
@@ -2339,19 +2298,24 @@ Visualization Manager:
       Name: Map
       Topic: /map
       Unreliable: false
+      Use Timestamp: false
       Value: false
     - Class: octomap_rviz_plugin/OccupancyGrid
       Enabled: false
+      Max. Height Display: inf
       Max. Octree Depth: 16
+      Min. Height Display: -inf
       Name: OccupancyGrid
       Octomap Topic: /octomap_demo
       Queue Size: 5
       Value: false
+      Voxel Alpha: 1
       Voxel Coloring: Z-Axis
       Voxel Rendering: Occupied Voxels
   Enabled: true
   Global Options:
     Background Color: 255; 255; 255
+    Default Light: true
     Fixed Frame: base_link
     Frame Rate: 30
   Name: root
@@ -2363,7 +2327,10 @@ Visualization Manager:
     - Class: rviz/FocusCamera
     - Class: rviz/Measure
     - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
       Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
     - Class: rviz/SetGoal
       Topic: /move_base_simple/goal
     - Class: rviz/PublishPoint
@@ -2373,34 +2340,37 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 13.9181
+      Distance: 27.47186279296875
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.06
+        Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -3.12684
-        Y: -4.30516
-        Z: 8.79164e-07
+        X: 1.2395292520523071
+        Y: -0.9448065757751465
+        Z: 8.791640198069217e-7
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
-      Pitch: 0.950203
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 1.0152029991149902
       Target Frame: <Fixed Frame>
       Value: XYOrbit (rviz)
-      Yaw: 3.86669
+      Yaw: 4.811691761016846
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1176
+  Height: 2091
   Hide Left Dock: false
-  Hide Right Dock: false
+  Hide Right Dock: true
   MotionPlanning:
     collapsed: false
-  MotionPlanning - Slider:
+  MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000002a20000040efc020000000bfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000280000040e000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670000000280000001b60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067000000025f000001d7000001cc00ffffff000000010000010f0000040efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007301000000280000040e000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003efc0100000002fb0000000800540069006d006501000000000000073f000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000003820000040e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000002a200000759fc020000000cfb0000001200530065006c0065006300740069006f006e00000001e10000009b0000008600fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000056000007590000012600fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670000000280000001b60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067000000025f000001d70000021700fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001e0000001e000000010000011f00000759fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000005600000759000000ec00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000075f0000004dfc0100000002fb0000000800540069006d006501000000000000075f0000042b00fffffffb0000000800540069006d00650100000000000004500000000000000000000004b40000075900000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -2408,7 +2378,7 @@ Window Geometry:
   Tool Properties:
     collapsed: false
   Views:
-    collapsed: false
-  Width: 1855
-  X: 1985
-  Y: 24
+    collapsed: true
+  Width: 1887
+  X: 1953
+  Y: 41
