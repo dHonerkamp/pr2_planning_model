@@ -8,7 +8,9 @@
   <!-- TODO: throttled not implemented in gazebo_ros/empty_world.launch
   <arg name="throttled" default="false"/>
   -->
-  <arg name="world_name" default="worlds/empty.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+<!--  <arg name="world_name" default="worlds/empty.world"/> &lt;!&ndash; Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable &ndash;&gt;-->
+<!--  <arg name="world_name" default="$(find aws_robomaker_small_house_world)/worlds/small_house.world"/> &lt;!&ndash; Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable &ndash;&gt;-->
+  <arg name="world_name" default="$(find aws_robomaker_bookstore_world)/worlds/bookstore.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
 
   <arg name="KINECT1" default="$(optenv KINECT1 false)" />
   <arg name="KINECT2" default="$(optenv KINECT2 false)" />
