@@ -90,7 +90,7 @@
   </group_state>-->
 	
 	<group name="pr2_base_arm">
-      <chain base_link="base_link" tip_link="l_gripper_motor_screw_link"/>
+      <chain base_link="base_link" tip_link="r_gripper_motor_screw_link"/>
     </group>
    
    <group name="pr2_base">
