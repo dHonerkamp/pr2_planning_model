@@ -100,6 +100,16 @@
    <group name="pr2_arm">
       <chain base_link="torso_lift_link" tip_link="l_gripper_motor_screw_link"/>
    </group>
+
+   <!--So we can initialise the modulation_rl env-->
+   <group name="right_arm">
+       <chain base_link="torso_lift_link" tip_link="r_wrist_roll_link" />
+   </group>
+  <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+  <virtual_joint name="world_joint" type="planar" parent_frame="odom_combined" child_link="base_footprint" />
+  <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+  <passive_joint name="world_joint" />
+
    
 	<!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <!--<end_effector name="right_eef" parent_link="r_wrist_roll_link" group="right_gripper" />
@@ -120,8 +130,12 @@
     <disable_collisions link1="base_theta_link" link2="base_y_link" reason="Never" />
 	<disable_collisions link1="base_theta_link" link2="base_x_link" reason="Never" />
 	<disable_collisions link1="base_y_link" link2="base_x_link" reason="Never" />
-	
-	<disable_collisions link1="base_bellow_link" link2="base_footprint" reason="Never" />
+    <disable_collisions link1="base_link" link2="base_box_link" reason="Never" />
+    <disable_collisions link1="base_link" link2="base_theta_link" reason="Never" />
+    <disable_collisions link1="base_link" link2="base_x_link" reason="Never" />
+    <disable_collisions link1="base_link" link2="base_y_link" reason="Never" />
+
+    <disable_collisions link1="base_bellow_link" link2="base_footprint" reason="Never" />
     <disable_collisions link1="base_bellow_link" link2="base_box_link" reason="Adjacent" />
     <disable_collisions link1="base_bellow_link" link2="bl_caster_l_wheel_link" reason="Never" />
     <disable_collisions link1="base_bellow_link" link2="bl_caster_r_wheel_link" reason="Never" />

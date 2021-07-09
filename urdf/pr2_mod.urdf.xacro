@@ -172,7 +172,7 @@
       <robotName>pr2</robotName>
       <updatePeriod>0.5</updatePeriod>
       <!-- TODO: maybe should rather be in world or map frame -->
-      <publishFrameId>base_footprint</publishFrameId>
+      <publishFrameId>odom_combined</publishFrameId>
     </plugin>
   </gazebo>
 
