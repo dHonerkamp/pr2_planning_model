@@ -17,14 +17,16 @@
   
    <!-- Load to the parameter server yaml files -->
   <group ns="robot_description_planning">    
-    <rosparam command="load" file="$(find pr2_moveit_config)/config/joint_limits.yaml"/>
+    <rosparam command="load" file="$(find pr2_planning_model)/config/joint_limits.yaml"/>
+    <param name="/move_group/pr2_base_wrist/longest_valid_segment_fraction" value="0.05"/>
+    <param name="/move_group/pr2_base_arm/longest_valid_segment_fraction" value="0.05"/>
   </group>
 
   <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
   <group ns="robot_description_kinematics">
     <rosparam command="load" file="$(find pr2_planning_model)/config/kinematics.yaml"/>
   </group>
-  
+
   <node pkg="tf" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 odom_combined base_footprint 100" />
   <node pkg="tf" type="static_transform_publisher" name="virtual_joint_broadcaster_1" args="0 0 0 0 0 0 map odom_combined 100" />
 
