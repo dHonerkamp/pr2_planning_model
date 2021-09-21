@@ -285,17 +285,17 @@
         <geometry>
           <box size="0.01 0.01 0.01" />
         </geometry>
-        
+
         <material name="White" />
       </visual>
-      <collision>
-        <!-- represent base collision with a simple rectangular model, positioned by base_size_z s.t. top
-             surface of the collision box matches the top surface of the PR2 base -->
-        <origin xyz="0 0 ${0.051+base_collision_size_z/2}" rpy="0 0 0" />
-        <geometry>
-          <box size="0.001 0.001 0.001" />
-        </geometry>
-      </collision>
+<!--      <collision>-->
+<!--        &lt;!&ndash; represent base collision with a simple rectangular model, positioned by base_size_z s.t. top-->
+<!--             surface of the collision box matches the top surface of the PR2 base &ndash;&gt;-->
+<!--        <origin xyz="0 0 ${0.051+base_collision_size_z/2}" rpy="0 0 0" />-->
+<!--        <geometry>-->
+<!--          <box size="0.001 0.001 0.001" />-->
+<!--        </geometry>-->
+<!--      </collision>-->
     </link>
 
     <joint name="${name}_footprint_joint" type="fixed">
@@ -333,6 +333,7 @@
     </joint>
 
     <!-- base laser -->
+    <!-- NOTE: THIS SEEMS TO SLIP OFF OF base_link. I THINK IT WOULD HAVE TO BE ATTACHED TO base_box_link, BUT SEEMS IMPOSSIBLE TO CHANGE OR REMOVE WITHOUT CRASHING GAZEBO-->
     <xacro:hokuyo_lx30_laser_v0 name="${name}_laser" parent="${name}" ros_topic="base_scan" update_rate="20" min_angle="-2.2689" max_angle="2.2689" >
       <origin xyz="${base_laser_x} ${base_laser_y} ${base_laser_z}" rpy="0 0 0" />
     </xacro:hokuyo_lx30_laser_v0>

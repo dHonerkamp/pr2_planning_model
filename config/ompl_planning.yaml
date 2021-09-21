@@ -101,7 +101,7 @@ pr2_base_wrist:
     - BKPIECEkConfigDefault
     - RRTStarkConfigDefault
   longest_valid_segment_fraction: 0.05
-  projection_evaluator: joints(r_shoulder_pan_joint,l_shoulder_pan_joint)
+#  projection_evaluator: joints(r_shoulder_pan_joint,l_shoulder_pan_joint)
 
 pr2_base_arm:
   planner_configs:
@@ -115,7 +115,7 @@ pr2_base_arm:
     - BKPIECEkConfigDefault
     - RRTStarkConfigDefault
   longest_valid_segment_fraction: 0.05
-  projection_evaluator: joints(r_shoulder_pan_joint,l_shoulder_pan_joint)
+#  projection_evaluator: joints(r_shoulder_pan_joint,l_shoulder_pan_joint)
 
 planner_configs:
 
