@@ -46,8 +46,13 @@
   <run_depend>roscpp</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>std_msgs</run_depend>
-  <run_depend>robot_motion_planning</run_depend>
 
+  <run_depend>rrt_star_algorithm</run_depend>
+  <run_depend>birrt_star_algorithm</run_depend>
+  <run_depend>planning_world_builder</run_depend>
+  <run_depend>planner_statistics</run_depend>
+  <run_depend>planning_scenarios</run_depend>
+  <run_depend>planner_param_config</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
