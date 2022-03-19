@@ -8,11 +8,11 @@
         args="pub /calibrated std_msgs/Bool true" />
 
   <!-- Stereo image processing -->
-  <include file="$(find pr2_gazebo)/config/dualstereo_camera.launch" />
+<!--  <include file="$(find pr2_gazebo)/config/dualstereo_camera.launch" />-->
 
   <!-- Start image_proc inside camera namespace-->
-  <include file="$(find pr2_gazebo)/config/r_forearm_cam.launch" />
-  <include file="$(find pr2_gazebo)/config/l_forearm_cam.launch" />
+<!--  <include file="$(find pr2_gazebo)/config/r_forearm_cam.launch" />-->
+<!--  <include file="$(find pr2_gazebo)/config/l_forearm_cam.launch" />-->
 
   <!-- diagnostics aggregator -->
   <node pkg="diagnostic_aggregator" type="aggregator_node" name="diag_agg" args="Robot" />
