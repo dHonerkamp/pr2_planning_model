@@ -6,7 +6,7 @@
 <!-- push robot_description to factory and spawn robot in gazebo -->
 <!--  <node name="spawn_pr2_model" pkg="gazebo_ros" type="spawn_model" args="$(optenv ROBOT_INITIAL_POSE) -unpause -urdf -param robot_description -model pr2 -ros_namespace /gazebo" respawn="false" output="screen" />-->
 <!--  NOTE: spawn it outside the main map-->
-  <node name="spawn_pr2_model" pkg="gazebo_ros" type="spawn_model" args="-x 20 -y 20 -unpause -urdf -param robot_description -J l_shoulder_pan_joint 2.076 -J l_shoulder_lift_joint 1.249 -J l_upper_arm_roll_joint 2.1 -J l_elbow_flex_joint -1.75 -model pr2" respawn="false" output="screen" />
+  <node name="spawn_pr2_model" pkg="gazebo_ros" type="spawn_model" args="-x 20 -y 20 -unpause -urdf -param robot_description -model pr2" respawn="false" output="screen" />
 
   <!-- default bringup script -->
   <include file="$(find pr2_planning_model)/launch/pr2_bringup.launch" />
