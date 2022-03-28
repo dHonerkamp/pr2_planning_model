@@ -113,6 +113,9 @@
    <group name="right_arm">
        <chain base_link="torso_lift_link" tip_link="r_wrist_roll_link" />
    </group>
+  <group name="left_arm">
+    <chain base_link="torso_lift_link" tip_link="l_wrist_roll_link" />
+  </group>
   <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
   <virtual_joint name="world_joint" type="planar" parent_frame="odom_combined" child_link="base_footprint" />
   <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
