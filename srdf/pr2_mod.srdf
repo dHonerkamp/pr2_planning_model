@@ -148,26 +148,32 @@
     <disable_collisions link1="base_link" link2="base_theta_link" reason="Never" />
     <disable_collisions link1="base_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="base_link" link2="base_y_link" reason="Never" />
+    <disable_collisions link1="br_caster_l_wheel_link" link2="base_link" reason="Never" />
     <disable_collisions link1="br_caster_l_wheel_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="br_caster_l_wheel_link" link2="base_y_link" reason="Never" />
     <disable_collisions link1="br_caster_l_wheel_link" link2="base_theta_link" reason="Never" />
     <disable_collisions link1="br_caster_l_wheel_link" link2="base_box_link" reason="Never" />
+    <disable_collisions link1="br_caster_r_wheel_link" link2="base_link" reason="Never" />
     <disable_collisions link1="br_caster_r_wheel_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="br_caster_r_wheel_link" link2="base_y_link" reason="Never" />
     <disable_collisions link1="br_caster_r_wheel_link" link2="base_theta_link" reason="Never" />
     <disable_collisions link1="br_caster_r_wheel_link" link2="base_box_link" reason="Never" />
+    <disable_collisions link1="bl_caster_l_wheel_link" link2="base_link" reason="Never" />
     <disable_collisions link1="bl_caster_l_wheel_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="bl_caster_l_wheel_link" link2="base_y_link" reason="Never" />
     <disable_collisions link1="bl_caster_l_wheel_link" link2="base_theta_link" reason="Never" />
     <disable_collisions link1="bl_caster_l_wheel_link" link2="base_box_link" reason="Never" />
+    <disable_collisions link1="bl_caster_r_wheel_link" link2="base_link" reason="Never" />
     <disable_collisions link1="bl_caster_r_wheel_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="bl_caster_r_wheel_link" link2="base_y_link" reason="Never" />
     <disable_collisions link1="bl_caster_r_wheel_link" link2="base_theta_link" reason="Never" />
     <disable_collisions link1="bl_caster_r_wheel_link" link2="base_box_link" reason="Never" />
+    <disable_collisions link1="fr_caster_l_wheel_link" link2="base_link" reason="Never" />
     <disable_collisions link1="fr_caster_l_wheel_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="fr_caster_l_wheel_link" link2="base_y_link" reason="Never" />
     <disable_collisions link1="fr_caster_l_wheel_link" link2="base_theta_link" reason="Never" />
     <disable_collisions link1="fr_caster_l_wheel_link" link2="base_box_link" reason="Never" />
+    <disable_collisions link1="fr_caster_r_wheel_link" link2="base_link" reason="Never" />
     <disable_collisions link1="fr_caster_r_wheel_link" link2="base_x_link" reason="Never" />
     <disable_collisions link1="fr_caster_r_wheel_link" link2="base_y_link" reason="Never" />
     <disable_collisions link1="fr_caster_r_wheel_link" link2="base_theta_link" reason="Never" />
